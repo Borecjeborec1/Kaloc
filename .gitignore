@@ -1,4 +1,6 @@
-dist/
+dist/*/*/*.js
+dist/*/*.js
+dist/*.js
 node_modules/
 app/
 test/
