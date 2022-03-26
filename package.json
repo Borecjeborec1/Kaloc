@@ -1,0 +1,21 @@
+{
+  "name": "kaloc",
+  "version": "0.0.1",
+  "description": "Kaloc Programming Language",
+  "main": "dist/index.js",
+  "keywords": [
+    "kaloc"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "tsc -w",
+    "build": "node build/win.js",
+    "test": "node dist/index.js test/test.kaloc"
+  },
+  "author": "borecjeborec1",
+  "license": "MIT",
+  "devDependencies": {
+    "nexe": "^4.0.0-beta.19",
+    "typescript": "^4.6.3"
+  }
+}
