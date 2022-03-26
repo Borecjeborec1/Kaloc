@@ -1,17 +1,25 @@
 export function convert(source: string) {
-  let data = vars(source);
+  let data = singleRegex(source);
   return data
 }
-
-function vars(source: string) {
-  let data = source.replace(/filip's |kuba's /g, (e) => {
-    console.log(e)
-    return e
-  });
-  return data
+const keywords: { [key: string]: any } = {
+  "filip's ": "let ",
+  "kuba's ": "const ",
+  " equals ": " === ",
+  " not equals ": " !== ",
+  " is greater than ": " > ",
+  " is greater than or equals ": " >= ",
+  " is less than ": " < ",
+  " is less than or equals ": " <= ",
+  " and ": " && ",
+  " or ": " || ",
+  " not ": " ! ",
+  " is ": " = ",
+}
+function singleRegex(source: string) {
+  for (let keyword in keywords) {
+    source = source.replace(new RegExp(keyword, 'g'), keywords[keyword]);
+  }
+  return source
 }
 
-const keywords = {
-  "filip's": "let",
-  "kuba's": "const",
-}

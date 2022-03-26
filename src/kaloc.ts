@@ -5,3 +5,4 @@ function interpret(source: string) {
 }
 
 export { interpret }
+

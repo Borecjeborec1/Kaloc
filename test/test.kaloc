@@ -1,2 +1,9 @@
-filip's x is 5
-console.log(x)
+filip's isPrime is function(n){
+  if (num is less than 2) return false;
+  for each filip in n filips {
+    if (filip is divisible by n) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(2));

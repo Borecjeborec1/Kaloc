@@ -27,5 +27,5 @@ const source: string = readFileSync(filePath, 'utf8');
 
 const data = interpret(source);
 
-
+eval(data)
 
