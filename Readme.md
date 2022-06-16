@@ -1,3 +1,3 @@
-# Currently in development
+ Currently in development
 
-# Kaloc
+# Kaloc Programming language 
